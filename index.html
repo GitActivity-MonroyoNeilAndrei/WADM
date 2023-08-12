@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WADM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="document.js"></script>
+    <script src="calculations.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="border border-dark container-lg text-center" id="container">
+      <div class="row"><h2>Weighted Average Decision Matrix</h2></div>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-secondary" onclick="addRow();">Add Row</button>
+          <input id="rowId" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <table class="table table-striped">
+            <thead>
+              <tr id="header">
+                <th>Factors</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="col-2 text-center">
+          <button class="btn btn-secondary" onclick="addColumn();">Add Column</button>
+          <input id="columnId" class="mt-2" style="max-width: 8rem;" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12"><button class="btn btn-primary mt-4" onclick="calculate();">Calculate</button></div>
+      </div>
+    </div>
+
+  </body>
+</html>

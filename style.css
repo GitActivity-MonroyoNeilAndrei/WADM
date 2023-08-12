@@ -1,0 +1,16 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  width: 2rem;
+  padding: 3px;
+  display: inline;
+  margin-left: .6rem;
+}
+
+td:first-child {
+  text-align: end;
+}
