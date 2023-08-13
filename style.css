@@ -14,3 +14,7 @@ input[type=number] {
 td:first-child {
   text-align: end;
 }
+
+body {
+  background-color: yellow;
+}
