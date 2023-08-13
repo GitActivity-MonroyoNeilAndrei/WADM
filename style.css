@@ -15,6 +15,38 @@ td:first-child {
   text-align: end;
 }
 
-body {
-  background-color: yellow;
+#container {
+  border: 1px solid rgba(0, 0, 0, 0.357);
+  border-radius: 10px;
+  padding: 2rem 0;
 }
+
+
+td {
+  border: 1px solid rgba(0, 0, 0, 0.526);
+}
+
+th {
+  border: 1px solid rgba(0, 0, 0, 0.537);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+
+input[type=text] {
+  max-width: 8rem;
+}
+
+@media (max-width: 350px) {
+  input[type=text] {
+    max-width: 7rem;
+  }
+
+  table {
+    table-layout: auto;
+  }
+}
+
