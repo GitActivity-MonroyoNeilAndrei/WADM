@@ -78,10 +78,7 @@ class Document {
           this.createInputNumber("a" + row, "a" + row);
         } else {
           this.createTd(this.alphabet[col] + row, row);
-          this.createInputNumber(
-            this.alphabet[col] + row,
-            this.alphabet[col] + row
-          );
+          this.createInputNumber(this.alphabet[col] + row, this.alphabet[col] + row);
         }
       }
     }
@@ -136,5 +133,9 @@ class Document {
       answerRow.remove();
     }
     this.isAnswerShown = false;
+  }
+
+  static clearInputs(id) {
+    document.getElementById(id).value = "";
   }
 }

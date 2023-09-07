@@ -1,5 +1,4 @@
 
-
 function addColumn() {
   Document.removeAnswerRow();
 
@@ -9,6 +8,7 @@ function addColumn() {
 
   Document.remove();
   Document.fill();
+  Document.clearInputs('columnId');
 
 }
 
@@ -21,6 +21,7 @@ function addRow() {
 
   Document.remove();
   Document.fill();
+  Document.clearInputs('rowId');
 
 }
 
