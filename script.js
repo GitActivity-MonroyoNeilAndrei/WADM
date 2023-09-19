@@ -1,5 +1,9 @@
 
 function addColumn() {
+  if(Document.isEmpty("columnId")) {
+    return;
+  }
+
   Document.removeAnswerRow();
 
   var headerValue = document.getElementById("columnId").value;
@@ -13,6 +17,10 @@ function addColumn() {
 }
 
 function addRow() {
+  if(Document.isEmpty("rowId")) {
+    return;
+  }
+  
   Document.removeAnswerRow();
 
   var rowValue = document.getElementById("rowId").value;

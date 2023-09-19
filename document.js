@@ -138,4 +138,16 @@ class Document {
   static clearInputs(id) {
     document.getElementById(id).value = "";
   }
+
+  static isEmpty(id) {
+    var textVal=document.getElementById(id).value;
+    if (textVal == "") 
+    {
+        return true;
+    } 
+    else 
+    {
+        return false;
+    }
+  }
 }
